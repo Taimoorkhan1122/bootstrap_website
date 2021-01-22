@@ -20,7 +20,10 @@ body {
 #card a { display: block;}
 
 .btn {
+    font-size: 0.95rem;
     border-radius: 10rem;
+    line-height: 1rem;
+    padding: .5rem;
 }
 
 .card-style {
