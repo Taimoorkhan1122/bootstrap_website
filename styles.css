@@ -1,25 +1,93 @@
+:root{
+    --primary-light: #321371;
+    --primary-dark: #040728;
+    --secondary-light: #72b8f8;
+    --secondary-dark: #afafaf;
+    --shadow:  drop-shadow(0px 6px 13px rgba(50, 19, 113, 0.31362));
+}
 body {
-    background-color: rgb(238, 238, 238);
+    background: linear-gradient(220.58deg, #ABCFFB -3.34%, #72A2F6 105.69%);
     margin: 0;
     padding: 0;
 }
-nav {
-    background-color: #2C1A4D;
+
+/* class for fonts */
+.title {
+    font-family: url("./fonts/GothamRounded-Medium.otf");
+    font-style: normal;
+    font-weight: medium;
+    font-size: 36px;
+    line-height: 46px;
+    /* or 164% */
 }
 
-.navbar-light{
+.sub-title {
+    font-family: url("./fonts/GothamRounded-Medium.otf");
+    font-style: normal;
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 164% */
+
+}
+
+
+.body {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+    /* or 164% */
+    color: var(--primary-dark);
+}
+
+.header {
+    width: 100%;
+    height: 90vh;
+    background-image: url("./assets/FILL_BLUE.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: var(--primary-dark);
+}
+
+button {
+    font-family: 'lato';
+    font-size: 14px;
+    font-weight: bold;
+    width : 150px;
+    height :41px;
+    outline: none;
+    border: none;
+    filter: var(--shadow);
+    border-radius: 25px;
     color: #fff;
 }
 
-.background-circle {
-    background-color: #2C1A4D;
-    width: 100%;
-    height: 500px;
-    /* border-top-left-radius: 100%;
-    border-top-right-radius: 100%; */
-    border-bottom-left-radius: 100% 150%;
-    border-bottom-right-radius: 100% 150%;
-    filter: drop-shadow(0px 7px 8px rgba(0,0,0,0.75));
+button:focus{
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button.primary {
+    background: linear-gradient(138.87deg, #7288F6 -6.82%, #72B6F6 101.2%);
+}
+
+button.secondary {
+    background: linear-gradient(228.21deg, #592589 -1.71%, #B590D1 186.56%);
+}
+
+
+
+.navbar-light{
+    color: transparent;
 }
 
 ul.header-li  li span {
@@ -38,21 +106,112 @@ ul.header-li  li span {
 .illustration {
     max-width: 100%;
 }
-#card h5 { font-size: 16px;}
-#card p { font-size: 14px;}
-#card a { display: block;}
 
-.btn {
-    font-size: 0.95rem;
-    border-radius: 10rem;
-    line-height: 1rem;
-    padding: .5rem;
+
+/* illusttration positioning here */
+#illustrations {
+    position: absolute;
+    top: 10;
+    height: 100%;
+    padding: 0;
+    /* background-color: turquoise; */
 }
 
+.developer-position {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.laptop-position {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.building-position {
+    /* position: absolute;
+    left: 14%;
+    top: 55%; */
+    position: absolute;
+    left: 18%;
+    top: 45%;
+}
+
+.star-position{
+    position: absolute;
+    left: 7%;
+    top: 14%;
+}
+.triangle-position{
+    position: absolute;
+    left: 22%;
+    top: 20%;
+}
+.pie-position{  
+    position: absolute;
+    left: 12%;
+    top: 55%;}
+.particles-laptop {  
+    position: absolute;
+    left: 12%;
+    top: 9%;}
+
+.files-position {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+}
+.particles-position {
+    position: absolute;
+    top: 30%;
+    right: 7%;
+}
+.code-position {
+    position: absolute;
+    top: 27%;
+    right: 18%;
+}
+
+
+#card a { display: block;}
+#card img.logo { width: 50%;}
+
 .card-style {
-    width: 17rem;
-    border-radius: 1rem;
-    margin: 10px auto;
+    width: 16rem;
+    border-radius: 10px;
+}
+
+hr.line {
+    margin: auto;
+    background:  #592589;
+    border: none;
+    height: 1px;
+    opacity: 1;
+}
+
+a.link-primary {
+    color:  #592589;
+}
+
+a.btn  {
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 25px;
+    line-height: 23px;
+    text-align: center;
+    outline: none;
+    border: none;
+    
+}
+a.btn-primary {
+    background: linear-gradient(228.21deg, #592589 -1.71%, #B590D1 186.56%);
+
+}
+
+a .btn:focus{
+    outline: none;
+    border: none;
 }
 
 .profile {

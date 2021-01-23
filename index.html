@@ -22,8 +22,10 @@
     <!-- fluid container stretching througout the page -->
     <div class="container-fluid px-0">
       <nav class="container-fluid navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Wingoo</a>
+        <div class="container my-3">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/WING_IGP_LIGHT.svg" alt="Wingoo logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -54,23 +56,86 @@
                 <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-primary round-btn">
-              Inicia sesión
-            </button>
+            <button type="button" class="primary">Inicia sesión</button>
           </div>
         </div>
       </nav>
-      <main>
+      <!-- header container for background image  -->
+      <div class="header">
+        <!-- illustrations -->
+        <div id="illustrations" class="container-fluid">
+          <!-- particles , code and files -->
+          <img
+            src="./assets/illustratoins/FILE_ILUSTRACION.svg"
+            class="files-position"
+            alt=""
+          />
+          <img
+            src="./assets/illustratoins/PARTICLES_01.svg"
+            class="particles-position"
+            alt=""
+          />
+          <img
+            src="./assets/illustratoins/ICON_CODE.svg"
+            class="code-position"
+            alt=""
+          />
+
+          <!-- Developer -->
+
+          <img
+            src="./assets/illustratoins/DEVELOPER.svg"
+            alt="developer"
+            class="developer-position"
+          />
+          <!-- particles and icons -->
+          <img
+            src="./assets/illustratoins/ICON_STAR.svg"
+            class="star-position"
+            alt=""
+          />
+          <img
+            src="./assets/illustratoins/ICON_TRIANGLE.svg"
+            class="triangle-position"
+            alt=""
+          />
+          <img
+            src="./assets/illustratoins/ICON_PIE.svg"
+            class="pie-position"
+            alt=""
+          />
+          <img
+            src="./assets/illustratoins/PARTICLES_01.svg"
+            class="particles-laptop"
+            alt=""
+          />
+          <!-- laptop -->
+          <img
+            src="./assets/illustratoins/LAPTOP_ILUSTRACION.svg"
+            alt="isometric laptop illustration"
+            class="laptop-position"
+          />
+          <!-- Building -->
+          <img
+            src="./assets/illustratoins/BUILDING_ILUSTRACION.svg"
+            alt="isometric buildings"
+            class="building-position"
+          />
+        </div>
+
+        <!-- hero container  -->
         <div class="container-fluid text-center background-circle pt-5">
-          <div class="container text-center text-white">
-            <h1 class="display-6 my-2">Tu búsqueda de trabajo termina aquí</h1>
-            <p class="my-2">
+          <div class="container text-center text-white py-5">
+            <!-- main heading -->
+            <h1 class="title my-2">Tu búsqueda de trabajo termina aquí</h1>
+            <p class="body my-2 text-white">
               Te conectamos con oportunidades atrac@vas en las empresas más
               innovadoras del mundo
             </p>
-            <button type="button" class="btn btn-primary round-btn my-5">
-              Regístrate
-            </button>
+            <!-- hero CTA -->
+            <button type="button" class="secondary my-5">Regístrate</button>
+
+            <!-- hero list  -->
             <ul class="list-inline header-li">
               <i class="bi bi-check" aria-hidden="true"></i>
               <li class="list-inline-item">
@@ -87,288 +152,328 @@
             </ul>
           </div>
         </div>
-        <!-- main container for ¿Cómo funciona? (how it works) -->
-        <div class="container text-center m-auto my-5 py-2">
-          <!-- container for ¿Cómo funciona? -->
-          <div class="container-fluid">
-            <h1>¿Cómo funciona?</h1>
-          </div>
-          <!-- Start of container for PERFIL (Profile) -->
+      </div>
+      <!-- main container for ¿Cómo funciona? (how it works) -->
+      <div class="container text-center m-auto my-5 py-2">
+        <!-- container for ¿Cómo funciona? -->
+        <div class="container-fluid">
+          <h1 class="title text-white">¿Cómo funciona?</h1>
+        </div>
+        <!-- Start of container for PERFIL (Profile) -->
+        <div
+          class="container-fluid d-flex flex-wrap justify-content-around my-5 py-5"
+        >
+          <!-- text container -->
           <div
-            class="container-fluid d-flex flex-wrap justify-content-around my-5 py-5"
+            id="text"
+            class="container d-flex flex-column justify-content-center text-container p-4"
           >
-            <!-- text container -->
-            <div
-              id="text"
-              class="container d-flex flex-column justify-content-center text-container p-4"
-            >
-              <h4>PERFIL</h4>
-              <h4>Llena tu perfil personalizado</h4>
-              <p>
-                El perfil personalizado nos ayudará a colocarte con mayor
-                facilidad a posiciones en las que puedas sobresalir
-              </p>
-            </div>
-            <!-- image container -->
-            <div
-              id="img-bg"
-              class="container d-flex align-items-center p-0 w-50"
-            >
-              <img
-                src="./assets/PERFIL.svg"
-                class="figure-img img-fluid rounded m-0 w-100 illustration"
-                alt="profile illustration"
-              />
-            </div>
+            <h4 class="sub-title text-white">PERFIL</h4>
+            <h4 class="sub-title text-white">Llena tu perfil personalizado</h4>
+            <p class="body text-white">
+              El perfil personalizado nos ayudará a colocarte con mayor
+              facilidad a posiciones en las que puedas sobresalir
+            </p>
           </div>
-          <!-- Start of container for APLICA (Application) -->
-          <div
-            class="container-fluid d-flex flex-row-reverse flex-wrap justify-content-around my-5 py-5"
-          >
-            <!-- text container -->
-            <div
-              id="text"
-              class="container d-flex flex-column justify-content-center text-container p-4"
-            >
-              <h4>APLICA</h4>
-              <h4>¡Aplica a la vacante con un solo click!</h4>
-              <p>
-                En un click tendremos tus datos del perfil y posteriormente
-                pasarás por un proceso de evaluación técnica y entrevista.
-              </p>
-            </div>
-            <!-- image container -->
-            <div
-              id="img-bg"
-              class="container d-flex align-items-center p-0 w-50"
-            >
-              <img
-                src="./assets/PERFIL.svg"
-                class="figure-img img-fluid rounded m-0 w-100 illustration"
-                alt="profile illustration"
-              />
-            </div>
-          </div>
-          <!-- Start of container for RECIBE RESPUESTA (Reciever Answer) -->
-          <div
-            class="container-fluid d-flex flex-wrap justify-content-around my-5 py-5"
-          >
-            <!-- text container -->
-            <div
-              id="text"
-              class="container d-flex flex-column justify-content-center text-container p-4"
-            >
-              <h4>RECIBE RESPUESTA</h4>
-              <h4>¡Acepta la propuesta del trabajo de tus sueños!</h4>
-              <p>
-                Recibirás una respuesta sobre tu proceso. En el caso de ser un
-                éxito, recibirás una propuesta. Mientras que en el caso de una
-                negaBva enviaremos la resolución junto con retroalimentación.
-              </p>
-            </div>
-            <!-- image container -->
-            <div
-              id="img-bg"
-              class="container d-flex align-items-center p-0 w-50"
-            >
-              <img
-                src="./assets/PERFIL.svg"
-                class="figure-img img-fluid rounded m-0 w-100 illustration"
-                alt="profile illustration"
-              />
-            </div>
+          <!-- image container -->
+          <div id="img-bg" class="container d-flex align-items-center p-0 w-50">
+            <img
+              src="./assets/PERFIL.svg"
+              class="figure-img img-fluid rounded m-0 w-100 illustration"
+              alt="profile illustration"
+            />
           </div>
         </div>
-        <!-- start of container for Vacantes desta cards (vacancies) -->
-        <div id="cards-container" class="container">
-          <div class="container text-center w-50 py-3">
-            <h4>Vacantes destacadas</h4>
-            <p>
+        <!-- Start of container for APLICA (Application) -->
+        <div
+          class="container-fluid d-flex flex-row-reverse flex-wrap justify-content-around my-5 py-5"
+        >
+          <!-- text container -->
+          <div
+            id="text"
+            class="container d-flex flex-column justify-content-center text-container p-4"
+          >
+            <h4 class="sub-title text-white">APLICA</h4>
+            <h4 class="sub-title text-white">
+              ¡Aplica a la vacante con un solo click!
+            </h4>
+            <p class="body text-white">
               En un click tendremos tus datos del perfil y posteriormente
               pasarás por un proceso de evaluación técnica y entrevista.
             </p>
           </div>
-          <!-- start of card section -->
-          <div class="container d-flex flex-wrap justify-content-between my-5">
-            <!-- start of card 01 -->
-            <div id="card" class="card card-style">
-              <img
-                src="data:image/png;base64,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"
-                class="card-img-top w-50 m-auto"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title m-0">Nombre de la empresa</h5>
-                <blockquote class="blockquote my-0">
-                  <p class="card-text m-0">Puesto de la oferta</p>
-                  <hr class="my-1" />
-                  <p class="m-0">
-                    <small>Guadalajara, Jalisco</small>
-                  </p>
-                </blockquote>
-                <!-- card icons  -->
-                <div
-                  id="card-icons-container"
-                  class="container d-flex flex-wrap justify-content-between my-1 p-0"
-                >
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Habilidades</p>
-                  </div>
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Aptitudes</p>
-                  </div>
-                  <div class="d-flex mx-auto my-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">SoTware</p>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-primary mb-2">Go somewhere</a>
-                <a href="#" class="link-primary d-inline-block"
-                  >Descubre más ></a
-                >
-              </div>
-            </div>
-            <!-- end of card -->
-            <!-- start of card 02 -->
-            <div id="card" class="card card-style">
-              <img
-                src="data:image/png;base64,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"
-                class="card-img-top w-50 m-auto"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title m-0">Nombre de la empresa</h5>
-                <blockquote class="blockquote my-0">
-                  <p class="card-text m-0">Puesto de la oferta</p>
-                  <hr class="my-1" />
-                  <p class="m-0">
-                    <small>Guadalajara, Jalisco</small>
-                  </p>
-                </blockquote>
-                <!-- card icons  -->
-                <div
-                  id="card-icons-container"
-                  class="container d-flex flex-wrap justify-content-between my-1 p-0"
-                >
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Habilidades</p>
-                  </div>
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Aptitudes</p>
-                  </div>
-                  <div class="d-flex mx-auto my-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">SoTware</p>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-primary mb-2">Go somewhere</a>
-                <a href="#" class="link-primary d-inline-block"
-                  >Descubre más ></a
-                >
-              </div>
-            </div>
-            <!-- end of card -->
-            <!-- start of card 03 -->
-            <div id="card" class="card card-style">
-              <img
-                src="data:image/png;base64,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"
-                class="card-img-top w-50 m-auto"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title m-0">Nombre de la empresa</h5>
-                <blockquote class="blockquote my-0">
-                  <p class="card-text m-0">Puesto de la oferta</p>
-                  <hr class="my-1" />
-                  <p class="m-0">
-                    <small>Guadalajara, Jalisco</small>
-                  </p>
-                </blockquote>
-                <!-- card icons  -->
-                <div
-                  id="card-icons-container"
-                  class="container d-flex flex-wrap justify-content-between my-1 p-0"
-                >
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Habilidades</p>
-                  </div>
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Aptitudes</p>
-                  </div>
-                  <div class="d-flex mx-auto my-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">SoTware</p>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-primary mb-2">Go somewhere</a>
-                <a href="#" class="link-primary d-inline-block"
-                  >Descubre más ></a
-                >
-              </div>
-            </div>
-            <!-- end of card -->
-            <!-- start of card 04 -->
-            <div id="card" class="card card-style">
-              <img
-                src="data:image/png;base64,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"
-                class="card-img-top w-50 m-auto"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title m-0">Nombre de la empresa</h5>
-                <blockquote class="blockquote my-0">
-                  <p class="card-text m-0">Puesto de la oferta</p>
-                  <hr class="my-1" />
-                  <p class="m-0">
-                    <small>Guadalajara, Jalisco</small>
-                  </p>
-                </blockquote>
-                <!-- card icons  -->
-                <div
-                  id="card-icons-container"
-                  class="container d-flex flex-wrap justify-content-between my-1 p-0"
-                >
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Habilidades</p>
-                  </div>
-                  <div class="d-flex align-items-center mx-auto my-2 pe-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">Aptitudes</p>
-                  </div>
-                  <div class="d-flex mx-auto my-3">
-                    <img src="./assets/icon_edit.svg" alt="skills icon" />
-                    <p class="small ms-2 my-0">SoTware</p>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-primary mb-2">Go somewhere</a>
-                <a href="#" class="link-primary d-inline-block"
-                  >Descubre más ></a
-                >
-              </div>
-            </div>
-            <!-- end of card -->
+          <!-- image container -->
+          <div id="img-bg" class="container d-flex align-items-center p-0 w-50">
+            <img
+              src="./assets/PERFIL.svg"
+              class="figure-img img-fluid rounded m-0 w-100 illustration"
+              alt="profile illustration"
+            />
           </div>
         </div>
-        <!-- Start of Perfiles (profile) section   -->
+
+        <!-- Start of container for RECIBE RESPUESTA (Reciever Answer) -->
         <div
-          class="container-fluid text-white d-flex justify-content-center align-items-center flex-column profile"
+          class="container-fluid d-flex flex-wrap justify-content-around my-5 py-5"
         >
-          <div class="container text-center w-50">
-            <h4>Perfiles</h4>
-            <p>
-              Utilizando herramientas libres de sesgo, los candidatos pasan por
-              un proceso riguroso de filtrado previo a ser enviados a la empresa
+          <!-- text container -->
+          <div
+            id="text"
+            class="container d-flex flex-column justify-content-center text-container p-4"
+          >
+            <h4 class="sub-title text-white">RECIBE RESPUESTA</h4>
+            <h4 class="sub-title text-white">
+              ¡Acepta la propuesta del trabajo de tus sueños!
+            </h4>
+            <p class="body text-white">
+              Recibirás una respuesta sobre tu proceso. En el caso de ser un
+              éxito, recibirás una propuesta. Mientras que en el caso de una
+              negaBva enviaremos la resolución junto con retroalimentación.
             </p>
           </div>
+          <!-- image container -->
+          <div id="img-bg" class="container d-flex align-items-center p-0 w-50">
+            <img
+              src="./assets/PERFIL.svg"
+              class="figure-img img-fluid rounded m-0 w-100 illustration"
+              alt="profile illustration"
+            />
+          </div>
         </div>
-      </main>
+      </div>
+
+      <!-- start of container for Vacantes desta cards (vacancies) -->
+      <div id="cards-container" class="container">
+        <div class="container text-center w-50 py-3">
+          <h4 class="title text-white">Vacantes destacadas</h4>
+          <p class="sub-title text-white">
+            En un click tendremos tus datos del perfil y posteriormente pasarás
+            por un proceso de evaluación técnica y entrevista.
+          </p>
+        </div>
+        <!-- start of card section -->
+        <div class="container d-flex flex-wrap justify-content-between my-5">
+          <!-- start of card 01 -->
+          <div id="card" class="card card-style mx-auto my-2 p-2">
+            <img
+              src="./assets/VACANTES/logo.svg"
+              class="card-img-top logo px-4 py-4 m-auto"
+              alt="logo"
+            />
+            <div class="card-body text-center py-1">
+              <h4 class="m-0 sub-title">Nombre de la empresa</h4>
+
+              <p class="card-text m-0 body">Puesto de la oferta</p>
+              <hr class="m-1 line" />
+              <div class="d-flex justify-content-center">
+                <img src="./assets/VACANTES/location-pin.svg" alt="" />
+                <p class="mb-1 mx-2 body">Guadalajara, Jalisco</p>
+              </div>
+
+              <!-- card icons  -->
+              <div
+                id="card-icons-container"
+                class="container d-flex flex-wrap justify-content-between my-1 p-0"
+              >
+                <div
+                  id="middle"
+                  class="container d-flex align-items-center justify-content-between my-1"
+                >
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/skill-development.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Habilidades</p>
+                  </div>
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/settings.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Aptitudes</p>
+                  </div>
+                </div>
+                <div class="d-flex mx-auto mb-3">
+                  <img src="./assets/VACANTES/skill.svg" alt="skills icon" />
+                  <p class="body ms-2 my-0">Software</p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+              <a href="#" class="link-primary d-inline-block">Descubre más ></a>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- start of card 02 -->
+          <div id="card" class="card card-style mx-auto my-2 p-2">
+            <img
+              src="./assets/VACANTES/logo.svg"
+              class="card-img-top logo px-4 py-4 m-auto"
+              alt="logo"
+            />
+            <div class="card-body text-center py-1">
+              <h4 class="m-0 sub-title">Nombre de la empresa</h4>
+
+              <p class="card-text m-0 body">Puesto de la oferta</p>
+              <hr class="m-1 line" />
+              <div class="d-flex justify-content-center">
+                <img src="./assets/VACANTES/location-pin.svg" alt="" />
+                <p class="mb-1 mx-2 body">Guadalajara, Jalisco</p>
+              </div>
+
+              <!-- card icons  -->
+              <div
+                id="card-icons-container"
+                class="container d-flex flex-wrap justify-content-between my-1 p-0"
+              >
+                <div
+                  id="middle"
+                  class="container d-flex align-items-center justify-content-between my-1"
+                >
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/skill-development.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Habilidades</p>
+                  </div>
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/settings.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Aptitudes</p>
+                  </div>
+                </div>
+                <div class="d-flex mx-auto mb-3">
+                  <img src="./assets/VACANTES/skill.svg" alt="skills icon" />
+                  <p class="body ms-2 my-0">Software</p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+              <a href="#" class="link-primary d-inline-block">Descubre más ></a>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- start of card 03 -->
+          <div id="card" class="card card-style mx-auto my-2 p-2">
+            <img
+              src="./assets/VACANTES/logo.svg"
+              class="card-img-top logo px-4 py-4 m-auto"
+              alt="logo"
+            />
+            <div class="card-body text-center py-1">
+              <h4 class="m-0 sub-title">Nombre de la empresa</h4>
+
+              <p class="card-text m-0 body">Puesto de la oferta</p>
+              <hr class="m-1 line" />
+              <div class="d-flex justify-content-center">
+                <img src="./assets/VACANTES/location-pin.svg" alt="" />
+                <p class="mb-1 mx-2 body">Guadalajara, Jalisco</p>
+              </div>
+
+              <!-- card icons  -->
+              <div
+                id="card-icons-container"
+                class="container d-flex flex-wrap justify-content-between my-1 p-0"
+              >
+                <div
+                  id="middle"
+                  class="container d-flex align-items-center justify-content-between my-1"
+                >
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/skill-development.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Habilidades</p>
+                  </div>
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/settings.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Aptitudes</p>
+                  </div>
+                </div>
+                <div class="d-flex mx-auto mb-3">
+                  <img src="./assets/VACANTES/skill.svg" alt="skills icon" />
+                  <p class="body ms-2 my-0">Software</p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+              <a href="#" class="link-primary d-inline-block">Descubre más ></a>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- start of card 04 -->
+          <div id="card" class="card card-style mx-auto my-2 p-2">
+            <img
+              src="./assets/VACANTES/logo.svg"
+              class="card-img-top logo px-4 py-4 m-auto"
+              alt="logo"
+            />
+            <div class="card-body text-center py-1">
+              <h4 class="m-0 sub-title">Nombre de la empresa</h4>
+
+              <p class="card-text m-0 body">Puesto de la oferta</p>
+              <hr class="m-1 line" />
+              <div class="d-flex justify-content-center">
+                <img src="./assets/VACANTES/location-pin.svg" alt="" />
+                <p class="mb-1 mx-2 body">Guadalajara, Jalisco</p>
+              </div>
+
+              <!-- card icons  -->
+              <div
+                id="card-icons-container"
+                class="container d-flex flex-wrap justify-content-between my-1 p-0"
+              >
+                <div
+                  id="middle"
+                  class="container d-flex align-items-center justify-content-between my-1"
+                >
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/skill-development.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Habilidades</p>
+                  </div>
+                  <div class="d-flex align-items-center mx-0 my-2">
+                    <img
+                      src="./assets/VACANTES/settings.svg"
+                      alt="skills icon"
+                    />
+                    <p class="body ms-2 my-0">Aptitudes</p>
+                  </div>
+                </div>
+                <div class="d-flex mx-auto mb-3">
+                  <img src="./assets/VACANTES/skill.svg" alt="skills icon" />
+                  <p class="body ms-2 my-0">Software</p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+              <a href="#" class="link-primary d-inline-block">Descubre más ></a>
+            </div>
+          </div>
+          <!-- end of card -->
+        </div>
+      </div>
+      <!-- Start of Perfiles (profile) section   -->
+      <div
+        class="container-fluid text-white d-flex justify-content-center align-items-center flex-column profile"
+      >
+        <div class="container text-center w-50">
+          <h4>Perfiles</h4>
+          <p>
+            Utilizando herramientas libres de sesgo, los candidatos pasan por un
+            proceso riguroso de filtrado previo a ser enviados a la empresa
+          </p>
+        </div>
+      </div>
 
       <footer class="container-fluid bg-primary text-white">
         <div class="container">
