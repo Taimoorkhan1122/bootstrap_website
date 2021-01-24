@@ -193,7 +193,7 @@ ul.header-li  li span {
   }
 
   .card-container::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 
 #card a { display: block;}
@@ -201,7 +201,7 @@ ul.header-li  li span {
 
 .card {
     border-radius: 10px;
-    min-width: 15rem;
+
   
 }
 
@@ -238,7 +238,46 @@ a .btn:focus{
     border: none;
 }
 
+a.carousel-control {
+    /* background: #000; */
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: auto 0;
+
+}
+
+
+a.carousel-control-prev {
+    left: 78%;
+    top: 85%;
+}
+
+a.carousel-control-next {
+    position: absolute;
+    right: 15%;
+    top: 85%;
+}
+
+
 .profile {
     background-color: #2C1A4D;
     height: 70vh;
+}
+
+footer {
+    background: transparent;
+    background-image:  url("./assets/FOOTER/FOOTER_USER_01.svg"),url("./assets/FOOTER/FOOTER_USER_02.svg");
+    background-size: contain, contain;
+    background-position: bottom, bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 60vh;
+}
+
+hr.footer-line {
+    margin: auto;
+    background:  url("./assets/FOOTER/LINE_USER_FOOTER.svg");
+    border: none;
+    height: 2px;
+    opacity: 1;
 }
