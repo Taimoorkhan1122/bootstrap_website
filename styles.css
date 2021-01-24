@@ -272,10 +272,18 @@ footer {
     background-position: bottom, bottom;
     background-repeat: no-repeat, no-repeat;
     height: 60vh;
+    
+}
+
+.logo img {
+    width: 2vw;
+}
+
+.links .body {
+    color: var(--primary-light);
 }
 
 hr.footer-line {
-    margin: auto;
     background:  url("./assets/FOOTER/LINE_USER_FOOTER.svg");
     border: none;
     height: 2px;
