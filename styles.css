@@ -3,6 +3,7 @@
     --primary-dark: #040728;
     --secondary-light: #72b8f8;
     --secondary-dark: #afafaf;
+    --tertiary-dark-: #9553d3;
     --shadow:  drop-shadow(0px 6px 13px rgba(50, 19, 113, 0.31362));
 }
 body {
@@ -51,6 +52,79 @@ body {
     /* clip-path: ellipse(1440px 800px at 50% 0%); */
     
 }
+/* como-functiona section  */
+#como-functiona {
+        position: relative;
+} 
+
+/* bg-shapes and patterns */
+#bg-shape-01 {
+    position: absolute;
+    left: -10%;
+    top: 110%;
+
+}
+
+#bg-shape-02 {
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: 0;
+
+}
+
+ /* ----- CUBE -----  */
+#bg-cube-01 {
+    position: absolute;
+    right: 12%;
+    top: 20%;
+    z-index: 2;
+}
+
+#bg-cube-02 {
+    position: absolute;
+    right: 10%;
+    top: 75%;
+    z-index: 2;
+}
+/* ----- DOTs -----  */
+#bg-dots {
+    position: absolute;
+    left: 0;
+    top: 65%;
+    z-index: 2;
+}
+
+#bg-oval-01 {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+}
+
+#bg-oval-02 {
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    z-index: 2;
+}
+
+#bg-oval-03 {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+}
+
+#bg-oval-04 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+
+
 .container {
     max-width: 1080px ;
 }
@@ -61,7 +135,73 @@ body {
     background-repeat: no-repeat;
 }
 
+/* platform illustration css */
+#img-bg-1 {
+    /*
+    background: 
+    /* image url, repeat, positions /
+    /* shapes  /
+    url("./assets/PLATFORM/shape_first.svg") no-repeat  center;
+    background-size: fill;
+    */
 
+}
+
+#img-bg-1 {
+    position: relative;
+}
+.bg-img-1{
+    position: absolute;
+    width: 30rem;
+    right: -10%;
+    z-index: 0;
+}
+.particles-1 {
+    position: absolute;
+    top: 80%;
+    right: 90%;
+    z-index: 3;
+}
+.particles-1-top {
+    position: absolute;
+    top: -20%;
+    left: 85%;
+    z-index: 3;
+}
+
+/* background shade 02 and Particle */
+#img-bg-2 {
+    position: relative;
+}
+.bg-img-2{
+    position: absolute;
+    width: 30rem;
+    left: 10%;
+    z-index: 0;
+}
+
+.particles-2 {
+    position: absolute;
+    top: 82%;
+    left: 93%;
+    z-index: 3;
+}
+
+#img-bg-3 {
+    position: relative;
+}
+.bg-img-3{
+    position: absolute;
+    width: 35rem;
+    right: -20%;
+    z-index: 0;
+}
+.particles-3 {
+    position: absolute;
+    top: 60%;
+    left: 87%;
+    z-index: 3;
+}
 
 button {
     font-family: 'lato';
@@ -114,6 +254,7 @@ ul.header-li  li span {
 
 .illustration {
     max-width: 100%;
+    z-index: 2;
 }
 
 
@@ -228,6 +369,19 @@ a.btn  {
     border: none;
     
 }
+
+a.body {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a.btn-secondary {
+    background: var(--primary-light);
+    color: var(--secondary-light);
+
+
+}
+
 a.btn-primary {
     background: linear-gradient(228.21deg, #592589 -1.71%, #B590D1 186.56%);
 
@@ -237,6 +391,77 @@ a .btn:focus{
     outline: none;
     border: none;
 }
+ /* Profile  section */
+ /* background */
+ .profile {
+    background: 
+        /* lined circles  */
+        /* image url, repeat, positions */
+        url("./assets/PERFILES/OVAL-CENTER/Oval_03.svg") no-repeat  center,
+        url("./assets/PERFILES/OVAL-CENTER/Oval_02.svg") no-repeat  center,
+        url("./assets/PERFILES/OVAL-CENTER/Oval_01.svg") no-repeat  center,
+        /* solid circles */
+        url("./assets/PERFILES/OVAL_01.svg") no-repeat  100px 100px ,
+        url("./assets/PERFILES/OVAL_02.svg") no-repeat  90% 10% ,
+        url("./assets/PERFILES/OVAL_03.svg") no-repeat  85% 85% ,
+        url("./assets/PERFILES/OVAL_04.svg") no-repeat  left 70% ,
+        url("./assets/PERFILES/OVAL_05.svg") no-repeat  right 50% ,
+        /* background  */
+        url("./assets/PERFILES/TEXTURE_PROFILE_01.svg") no-repeat center;
+
+    background-size: auto, auto, auto, auto, auto, auto, auto, auto, cover;
+    height: auto;
+ } 
+
+ /* button */
+ a.profile-button-primary {
+     min-width: 150px;
+     height: 41px;
+     border-radius: 2rem;
+     color: var(--secondary-light);
+     background-color: var(--primary-light);
+     filter: drop-shadow(0px 6px 13px rgba(148, 140, 165, 0.314));
+     -webkit-filter: drop-shadow(0px 6px 13px rgba(114, 184, 248, 0.314));
+     font-size: 14px;
+ }
+
+ /* profile section tiles */
+
+#technologies {
+    /* background-color: #4f0f0f; */
+}
+
+
+#technologies > .line-one, .line-two, .line-three, .line-four, .line-five, .line-six, .line-seven {
+    /* background-color: rgb(60, 60, 148); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 0 ;
+}
+
+span.primary {
+    background-color: var(--tertiary-dark-);
+    border-radius: 10px;
+    padding: 5px 0;
+    width: 4.5rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-align: center;
+}
+/* text color classes for top profile tags */
+.text-blue {
+    color: var(--secondary-light);
+}
+.text-tertiary {
+    color: var(--tertiary-dark-);
+}
+.text-primary {
+    color: var(--primary-light);
+}
+.text-dark {
+    color: var(--secondary-dark);
+}
 
 a.carousel-control {
     /* background: #000; */
@@ -244,7 +469,6 @@ a.carousel-control {
     height: 2rem;
     border-radius: 50%;
     margin: auto 0;
-
 }
 
 
@@ -260,19 +484,13 @@ a.carousel-control-next {
 }
 
 
-.profile {
-    background-color: #2C1A4D;
-    height: 70vh;
-}
-
 footer {
     background: transparent;
     background-image:  url("./assets/FOOTER/FOOTER_USER_01.svg"),url("./assets/FOOTER/FOOTER_USER_02.svg");
     background-size: contain, contain;
     background-position: bottom, bottom;
     background-repeat: no-repeat, no-repeat;
-    height: 60vh;
-    
+    height: 60vh; 
 }
 
 .logo img {
