@@ -21,148 +21,176 @@
   </head>
   <body>
     <!-- fluid container stretching througout the page -->
-    <div id="main-container" class="container-fluid px-0">
-      <nav class="container-fluid navbar navbar-expand-lg navbar-dark">
-        <div class="container my-3">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/WING_IGP_LIGHT.svg" alt="Wingoo logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+    <div id="mainContainer" class="container-fluid px-0">
+      <div id="navHeaderContainer" class="container-fluid">
+        <nav class="container-fluid navbar navbar-expand-lg navbar-dark">
+          <div class="container my-3">
+            <a class="navbar-brand" href="#"
+              ><img
+                class="web-view z-index-8"
+                src="./assets/WING_IGP_LIGHT.svg"
+                alt="Wingoo logo" />
+              <img
+                class="mobile-view"
+                src="./assets/WING_MOBIL.svg"
+                alt="Wingoo logo"
+            /></a>
+            <ul class="navbar-nav ms-3 ms-auto mb-2 mb-lg-0 mobile-view">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Para empleadores</a
                 >
               </li>
             </ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">¿Cómo funciona?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
-              </li>
-            </ul>
-            <button type="button" class="primary">Inicia sesión</button>
+            <button
+              class="navbar-toggler"
+              style="z-index: 10"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 web-view">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Para empleadores</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">¿Cómo funciona?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+              <button type="button" class="primary">Inicia sesión</button>
+            </div>
           </div>
-        </div>
-      </nav>
-      <!-- header container for background image  -->
-      <div class="header">
-        <!-- illustrations -->
-        <div id="illustrations" class="container-fluid">
-          <!-- particles , code and files -->
-          <img
-            src="./assets/illustratoins/FILE_ILUSTRACION.svg"
-            class="files-position"
-            alt=""
-          />
-          <img
-            src="./assets/illustratoins/PARTICLES_01.svg"
-            class="particles-position"
-            alt=""
-          />
-          <img
-            src="./assets/illustratoins/ICON_CODE.svg"
-            class="code-position"
-            alt=""
-          />
-
-          <!-- Developer -->
-
-          <img
-            src="./assets/illustratoins/DEVELOPER.svg"
-            alt="developer"
-            class="developer-position"
-          />
-          <!-- particles and icons -->
-          <img
-            src="./assets/illustratoins/ICON_STAR.svg"
-            class="star-position"
-            alt=""
-          />
-          <img
-            src="./assets/illustratoins/ICON_TRIANGLE.svg"
-            class="triangle-position"
-            alt=""
-          />
-          <img
-            src="./assets/illustratoins/ICON_PIE.svg"
-            class="pie-position"
-            alt=""
-          />
-          <img
-            src="./assets/illustratoins/PARTICLES_01.svg"
-            class="particles-laptop"
-            alt=""
-          />
-          <!-- laptop -->
-          <img
-            src="./assets/illustratoins/LAPTOP_ILUSTRACION.svg"
-            alt="isometric laptop illustration"
-            class="laptop-position"
-          />
-          <!-- Building -->
-          <img
-            src="./assets/illustratoins/BUILDING_ILUSTRACION.svg"
-            alt="isometric buildings"
-            class="building-position"
-          />
-        </div>
-
-        <!-- hero container  -->
-        <div class="container-fluid text-center background-circle pt-5">
-          <div class="container text-center text-white py-5">
-            <!-- main heading -->
-            <h1 class="title my-2">Tu búsqueda de trabajo termina aquí</h1>
-            <p class="body my-2 text-white">
-              Te conectamos con oportunidades atrac@vas en las empresas más
-              innovadoras del mundo
-            </p>
-            <!-- hero CTA -->
-            <button type="button" class="secondary my-5">Regístrate</button>
-
-            <!-- hero list  -->
-            <ul class="list-inline header-li">
-              <img
-                class="arrow"
-                src="./assets/HOME/ICON_CHECK.svg"
-                alt="check"
-              />
-              <li class="list-inline-item">
-                <span> Oportunidades de trabajo actualizadas </span>
-              </li>
-              <li class="list-inline-item">
+        </nav>
+        <!-- header container for background image  -->
+        <div class="header d-flex flex-wrap hero-container">
+          <!-- hero container  -->
+          <div
+            id="hero-container-text"
+            class="container-fluid text-center background-circle pt-5"
+          >
+            <div
+              class="container d-flex flex-column text-center text-white py-4"
+            >
+              <!-- main heading -->
+              <div class="innerbox-top mb-5 py-2 px-2">
+                <h1 class="title my-2">Tu búsqueda de trabajo termina aquí</h1>
+                <p class="body my-2 text-white">
+                  Te conectamos con oportunidades atrac@vas en las empresas más
+                  innovadoras del mundo
+                </p>
+              </div>
+              <!-- illustrations -->
+              <div id="illustrations" class="container-fluid my-0">
+                <!-- particles , code and files -->
                 <img
-                  class="arrow"
-                  src="./assets/HOME/ICON_CHECK.svg"
-                  alt="check"
+                  src="./assets/illustratoins/FILE_ILUSTRACION.svg"
+                  class="files-position"
+                  alt=""
                 />
-                <span> Transparencia en proceso de selección </span>
-              </li>
-              <li class="list-inline-item">
                 <img
-                  class="arrow"
-                  src="./assets/HOME/ICON_CHECK.svg"
-                  alt="check"
+                  src="./assets/illustratoins/PARTICLES_01.svg"
+                  class="particles-position remove"
+                  alt=""
                 />
-                <span> Respuesta inmediata </span>
-              </li>
-            </ul>
+                <img
+                  src="./assets/illustratoins/ICON_CODE.svg"
+                  class="code-position"
+                  alt=""
+                />
+
+                <!-- Developer -->
+
+                <img
+                  src="./assets/illustratoins/DEVELOPER.svg"
+                  alt="developer"
+                  class="developer-position"
+                />
+                <!-- particles and icons -->
+                <img
+                  src="./assets/illustratoins/ICON_STAR.svg"
+                  class="star-position remove"
+                  alt=""
+                />
+                <img
+                  src="./assets/illustratoins/ICON_TRIANGLE.svg"
+                  class="triangle-position remove"
+                  alt=""
+                />
+                <img
+                  src="./assets/illustratoins/ICON_PIE.svg"
+                  class="pie-position remove"
+                  alt=""
+                />
+                <img
+                  src="./assets/illustratoins/PARTICLES_01.svg"
+                  class="particles-laptop remove"
+                  alt=""
+                />
+                <!-- laptop -->
+                <img
+                  src="./assets/illustratoins/LAPTOP_ILUSTRACION.svg"
+                  alt="isometric laptop illustration"
+                  class="laptop-position"
+                />
+                <!-- Building -->
+                <img
+                  src="./assets/illustratoins/BUILDING_ILUSTRACION.svg"
+                  alt="isometric buildings"
+                  class="building-position"
+                />
+              </div>
+
+              <div class="innerbox-bottom my-1">
+                <!-- hero CTA -->
+                <button type="button" class="secondary my-3">Regístrate</button>
+
+                <!-- hero list  -->
+                <ul
+                  class="list-inline header-li d-md-block d-flex flex-column my-5"
+                >
+                  <li class="list-inline-item">
+                    <img
+                      class="arrow"
+                      src="./assets/HOME/ICON_CHECK.svg"
+                      alt="check"
+                    />
+                    <span> Oportunidades de trabajo actualizadas </span>
+                  </li>
+                  <li class="list-inline-item">
+                    <img
+                      class="arrow"
+                      src="./assets/HOME/ICON_CHECK.svg"
+                      alt="check"
+                    />
+                    <span> Transparencia en proceso de selección </span>
+                  </li>
+                  <li class="list-inline-item">
+                    <img
+                      class="arrow"
+                      src="./assets/HOME/ICON_CHECK.svg"
+                      alt="check"
+                    />
+                    <span> Respuesta inmediata </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +221,7 @@
           </div>
           <!-- Start of container for PERFIL (Profile) -->
           <div
-            class="container-fluid d-flex flex-wrap justify-content-around my-5 py-5"
+            class="container-fluid d-flex flex-wrap justify-content-around my-4 py-3"
           >
             <!-- text container -->
             <div
@@ -201,6 +229,12 @@
               class="container d-flex flex-column justify-content-center text-container p-4"
             >
               <h4 class="sub-title text-white">PERFIL</h4>
+              <!-- wave line  -->
+              <img
+                src="./assets/PLATFORM/ICON_PATH_02.svg"
+                class="container w-50 m-auto mb-2"
+                alt="line"
+              />
               <h4 class="sub-title text-white">
                 Llena tu perfil personalizado
               </h4>
@@ -211,7 +245,10 @@
             </div>
 
             <!-- image container -->
-            <div id="img-bg-1" class="container d-flex align-items-center w-50">
+            <div
+              id="img-bg-1"
+              class="container d-flex align-items-center w-50 img-w-100"
+            >
               <img
                 src="./assets/PERFIL.svg"
                 class="figure-img img-fluid rounded m-0 w-100 illustration"
@@ -219,7 +256,7 @@
               />
               <img
                 src="./assets/PLATFORM/shape_first.svg"
-                class="bg-img-1"
+                class="bg-img-1 remove"
                 alt="background shade"
               />
               <!-- ----------- Particles ----------- -->
@@ -245,6 +282,12 @@
               class="container d-flex flex-column justify-content-center text-container p-4"
             >
               <h4 class="sub-title text-white">APLICA</h4>
+              <!-- wave line -->
+              <img
+                src="./assets/PLATFORM/ICON_PATH_02.svg"
+                class="container w-50 m-auto mb-2"
+                alt="line"
+              />
               <h4 class="sub-title text-white">
                 ¡Aplica a la vacante con un solo click!
               </h4>
@@ -256,7 +299,7 @@
             <!-- image container -->
             <div
               id="img-bg-2"
-              class="container d-flex align-items-center p-0 w-50"
+              class="container d-flex align-items-center p-0 w-50 img-w-100"
             >
               <img
                 src="./assets/HISTORIAL_DE_TRABAJO.svg"
@@ -265,7 +308,7 @@
               />
               <img
                 src="./assets/PLATFORM/shape_second.svg"
-                class="bg-img-2"
+                class="bg-img-2 remove"
                 alt="background shade"
               />
               <!-- ----------- Particles ----------- -->
@@ -287,6 +330,12 @@
               class="container d-flex flex-column justify-content-center text-container p-4"
             >
               <h4 class="sub-title text-white">RECIBE RESPUESTA</h4>
+              <!-- wave line -->
+              <img
+                src="./assets/PLATFORM/ICON_PATH.svg"
+                class="container w-50 m-auto mb-2"
+                alt="line"
+              />
               <h4 class="sub-title text-white">
                 ¡Acepta la propuesta del trabajo de tus sueños!
               </h4>
@@ -299,7 +348,7 @@
             <!-- image container -->
             <div
               id="img-bg-3"
-              class="container d-flex align-items-center p-0 w-50"
+              class="container d-flex align-items-center p-0 w-50 img-w-100"
             >
               <img
                 src="./assets/HISTORIAL.svg"
@@ -308,7 +357,7 @@
               />
               <img
                 src="./assets/PLATFORM/shape_last.svg"
-                class="bg-img-3"
+                class="bg-img-3 remove"
                 alt="background shade"
               />
               <!-- ----------- Particles ----------- -->
@@ -338,7 +387,7 @@
       <!-- ---------------- exmaple ----------------  -->
       <div
         id="carouselExampleControls"
-        class="carousel slide my-5 py-5"
+        class="carousel slide py-5"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -662,8 +711,8 @@
           </div>
         </div>
       </div>
-
-      <footer class="container-fluid text-white py-5" id="footer">
+      <!-- -------------- Footer starting -------------- -->
+      <footer class="container-fluid text-white pt-5" id="footer">
         <div class="container">
           <hr class="footer-line mb-5" />
           <div
