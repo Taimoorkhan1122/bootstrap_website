@@ -6,6 +6,7 @@
     --tertiary-dark-: #9553d3;
     --shadow:  drop-shadow(0px 6px 13px rgba(50, 19, 113, 0.31362));
 }
+
 body {
     background: url("./assets/BG_01.svg") no-repeat;
     background-size: cover;
@@ -75,7 +76,7 @@ a{
     background-size: 50%, cover;
     background-position: right top, top;
     background-repeat: no-repeat, no-repeat;
-    height: 120vh;
+    height: 70vw;
     z-index: 0;
     /* background: #000; */
     
@@ -229,7 +230,7 @@ a{
 .particles-3 {
     position: absolute;
     top: 60%;
-    left: 87%;
+    left: 80%;
     z-index: 3;
 }
 
@@ -292,51 +293,50 @@ ul.header-li  li span {
 #illustrations {
     position: absolute;
     top: 10;
-    height: 100%;
+    height: 50vw;
     padding: 0;
     /* background-color: turquoise; */
 }
 .developer {
     position: absolute;
-    height: 100vh;
-    width: fit-content;
+    height: 60vw;
     right: 0%;
     top: 0%;
 
 }
 .developer-position {
     position: absolute;
-    right: 0%;
-    top: 35%;
+    right: 5%;
+    top: 48%;
 }
 
 .files-position {
     position: absolute;
-    top: 0%;
-    right: -5%;
+    top: 20%;
+    right: 0%;
 }
 .particles-position {
     position: absolute;
-    top: 35%;
-    right: 3%;
+    top: 55%;
+    right: 5%;
 }
 .code-position {
     position: absolute;
-    top: 27%;
+    top: 45%;
     right: 18%;
 }
 
 
 .laptop-position {
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 10%;
+    left: 1%;
 }
 
 .building-position {
     position: absolute;
     left: 12%;
-    top: 45%;
+    top: 50%;
 }
 
 .star-position{
@@ -468,7 +468,7 @@ a .btn:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.25rem 0 ;
+    margin: 0.75rem 0 ;
 }
 .skills-bottom span {
     opacity: 0.75;
@@ -603,7 +603,7 @@ hr.footer-line {
     }
     .innerbox-top {
         width: 70%;
-        margin: 2rem auto !important;
+        margin: 1rem auto !important;
         padding: 0!important;
     
     }
@@ -616,7 +616,7 @@ hr.footer-line {
     /* illusttration positioning here */
     #illustrations {
         position: relative;
-        height: 42vh;
+        height: 42vw;
 
     }
 
@@ -624,7 +624,7 @@ hr.footer-line {
         width: 30vw;
     }
     .developer {
-        height: 20vh;
+        height: 20vw;
     }
     .developer-position {
         position: absolute;
@@ -879,6 +879,9 @@ hr.footer-line {
         height: auto;
         background-color: #0A1033;
     }   
+    #technologies > .line-one, .line-two, .line-three, .line-four, .line-five, .line-six, .line-seven {
+        margin: 1.25rem 0 ;
+    }
     #tags div{
         justify-content: space-around;
     }
