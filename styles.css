@@ -7,7 +7,8 @@
     --shadow:  drop-shadow(0px 6px 13px rgba(50, 19, 113, 0.31362));
 }
 body {
-    background: url("./assets/BG_01.svg");
+    background: url("./assets/BG_01.svg") no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -75,6 +76,7 @@ a{
     background-position: right top, top;
     background-repeat: no-repeat, no-repeat;
     height: 120vh;
+    z-index: 0;
     /* background: #000; */
     
 }
@@ -87,8 +89,9 @@ a{
 /* bg-shapes and patterns */
 #bg-shape-01 {
     position: absolute;
-    right: 0%;
+    left: 0%;
     top: 110%;
+    z-index: -1;
 
 }
 
@@ -441,8 +444,14 @@ a .btn:focus{
 
  /* button */
  a.profile-button-primary {
+     color: #fff !important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0.7rem;
+     text-align: center;
+     width: fit-content;
      min-width: 150px;
-     height: 41px;
      border-radius: 2rem;
      color: var(--secondary-light);
      background-color: var(--primary-light);
@@ -462,14 +471,16 @@ a .btn:focus{
     margin: 1.25rem 0 ;
 }
 .skills-bottom span {
-    opacity: 0.5;
+    opacity: 0.75;
 }
+
 
 span.active {
     background-color: var(--tertiary-dark-);
     border-radius: 10px;
-    padding: 5px 0;
-    width: 4.5rem;
+    padding: 0.5rem;
+    min-width: 3rem;
+    width: fit-content;
     font-weight: 500;
     line-height: 1rem;
     text-align: center;
@@ -689,6 +700,9 @@ hr.footer-line {
     .logo {
         justify-content: center;
     }
+    #tags .line-three, .line-two, .line-four, .line-five, .line-six, .line-seven  {
+        margin-top: 0;
+    }
     footer .logo img {
     width: 5vw;
     }
@@ -809,14 +823,14 @@ hr.footer-line {
         z-index: 5;
     }
     a.lSPrev { 
-    left: 38% !important;
+    left: 15% !important;
     top: 82% !important;
 
     }
 
     a.lSNext {
         position: absolute;
-        right: 0% !important;
+        right: 15% !important;
         top: 82% !important;
         
     }
@@ -833,6 +847,55 @@ hr.footer-line {
     }
     .logo {
         justify-content: center;
+    }
+    .particles-1-top {
+        position: absolute;
+        top: -20%;
+        left: 80%;
+        z-index: 3;
+    }
+    .particles-3 {
+        position: absolute;
+        top: 60%;
+        left: 76%;
+        z-index: 3;
+    }
+    /* Profile  section */
+    /* background */
+    .profile {
+        background: 
+        /* lined circles  */
+        /* solid circles */
+        url("./assets/PERFILES/OVAL_01.svg") no-repeat  10px 80px ,
+        url("./assets/PERFILES/OVAL_02.svg") no-repeat  120% 10% ,
+        url("./assets/PERFILES/OVAL_03.svg") no-repeat  85% 100% ,
+        url("./assets/PERFILES/OVAL_04.svg") no-repeat  left 70% ,
+        url("./assets/PERFILES/OVAL_05.svg") no-repeat  right 50% ,
+        /* background  */
+        url("./assets/PERFILES/TEXTURE_PROFILE_01.svg") no-repeat center;
+
+        background-size: auto, auto, auto, auto, auto, auto, auto, auto, contain;
+        min-height: 120vh;
+        height: auto;
+        background-color: #0A1033;
+    }   
+    #tags div{
+        justify-content: space-around;
+    }
+    .line-three {
+        width: 100% !important;
+    }
+    .line-four {
+        width: 90% !important;
+    }
+    .line-five {
+        width: 80% !important;
+    }
+    .line-six {
+        width: 90% !important;
+    }
+    .line-seven {
+        width: 100% !important;
     }
     footer .logo img {
     width: 5vw;

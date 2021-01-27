@@ -207,6 +207,7 @@
       <div id="como-functiona" class="container-fluid">
         <img
           id="bg-shape-01"
+          class="remove"
           src="./assets/BACKGROUND/BG_SHAPE_01.svg"
           alt="bg-shap-bottom"
         />
@@ -384,7 +385,7 @@
       </div>
 
       <!-- start of container for Vacantes desta cards (vacancies) -->
-      <div id="cards-container" class="container m-0">
+      <div id="cards-container" class="container m-0 mx-auto">
         <div class="container text-center py-1">
           <h4 class="title text-white">Vacantes destacadas</h4>
           <p class="body text-white">
@@ -398,7 +399,9 @@
 
       <!-- ---------------- exmaple ----------------  -->
       <!---------------- light slider ------------------->
-      <div class="container d-flex justify-content-around slider-container">
+      <div
+        class="container d-flex justify-content-around my-5 slider-container"
+      >
         <ul id="autoWidth" class="cs-hidden">
           <li class="item-a">
             <!-- start of card 01 -->
@@ -718,87 +721,95 @@
               riguroso de filtrado previo a ser enviados a la empresa
             </p>
           </div>
-          <div id="technologies" class="container py-2 body text-white">
-            <div class="line-one">
+          <div
+            id="technologies"
+            class="container d-flex flex-column py-2 body text-white"
+          >
+            <div class="line-one d-flex justify-content-around flex-wrap">
               <!-- initial dark button  -->
-              <a
-                class="btn profile-button-primary text-white"
-                href="#"
-                role="button"
-              >
+              <a class="btn profile-button-primary" href="#" role="button">
                 Desarrollador Front-End
               </a>
-              <span class="text-blue">Desarrollador Back-End</span>
-              <span class="text-primary">Desarrollador Mobil</span>
-              <span class="text-dark">Testing</span>
+              <a class="text-blue" role="button" href="#"
+                >Desarrollador Back-End</a
+              >
+              <a class="text-primary" href="#" role="button"
+                >Desarrollador Mobil</a
+              >
+              <a class="text-tertiary" href="#" role="button">Testing</a>
             </div>
-            <div class="line-two d-flex justify-content-around">
-              <span class="text-blue">Ingeniero DevOps</span>
-              <span class="text-tertiary">Administrador Linux </span>
-              <span class="text-blue">Data Scientist</span>
-              <span>Data Scientist</span>
+            <div class="line-two d-flex flex-wrap justify-content-around">
+              <a class="text-blue" href="#" role="button">Ingeniero DevOps</a>
+              <a class="text-tertiary" href="#" role="button"
+                >Administrador Linux
+              </a>
+              <a class="text-blue" href="#" role="button">Data Scientist</a>
             </div>
             <!-- ------------ bottom tags ------------ -->
             <div
               id="tags"
               class="skills-bottom py-4 d-flex flex-column align-items-center"
             >
-              <div class="line-three" style="width: 80%">
-                <span>Go</span>
-                <span>MySQL</span>
-                <span class="front-end">WebPack</span>
-                <span>.Net</span>
-                <span class="front-end">React Native</span>
-                <span>Kubernetes</span>
-                <span>Express</span>
-                <span>PHPUnit</span>
+              <div class="d-flex flex-wrap line-three" style="width: 80%">
+                <span class="m-1 back-end">Go</span>
+                <span class="m-1 data-Analyst">MySQL</span>
+                <span class="m-1 front-end">WebPack</span>
+                <span class="m-1 back-end">.Net</span>
+                <span class="m-1 mobile">React Native</span>
+                <span class="m-1 cloud">Kubernetes</span>
+                <span class="m-1 back-end">Express</span>
+                <span class="m-1 testing">PHPUnit</span>
+                <span class="m-1 mobile">Kotlin</span>
               </div>
-              <div class="line-four" style="width: 90%">
-                <span class="front-end">HTML</span>
-                <span>Networking</span>
-                <span>Azure DevOps</span>
-                <span>Selenium</span>
-                <span>DB NoSQL</span>
-                <span>Google Cloud</span>
-                <span>Deep Learning</span>
-                <span class="front-end">Ionic</span>
+              <div class="d-flex flex-wrap line-four" style="width: 90%">
+                <span class="m-1 front-end">HTML</span>
+                <span class="m-1 testing-">JUnit</span>
+                <span class="m-1 administration">Networking</span>
+                <span class="m-1 cloud administration">Azure DevOps</span>
+                <span class="m-1 testing">Selenium</span>
+                <span class="m-1 administration">DB NoSQL</span>
+                <span class="m-1 cloud">Google Cloud</span>
+                <span class="m-1 data-Analyst">Deep Learning</span>
+                <span class="m-1 cloud">AWS</span>
+                <span class="m-1 mobile">Ionic</span>
               </div>
-              <div class="line-five" style="width: 95%">
-                <span>R</span>
-                <span class="front-end">JavaScript</span>
-                <span class="front-end">PHP</span>
-                <span>Xarmin</span>
-                <span class="front-end">Soap UI</span>
-                <span>Cloud Computing</span>
-                <span>Azure</span>
-                <span class="front-end">Bootstrap</span>
-                <span>Docker</span>
-                <span>Jest</span>
+              <div class="d-flex flex-wrap line-five" style="width: 95%">
+                <span class="m-1 data-Analyst data-Analyst">R</span>
+                <span class="m-1 front-end mobile">JavaScript</span>
+                <span class="m-1 back-end">PHP</span>
+                <span class="m-1 mobile">Xarmin</span>
+                <span class="m-1 testing">Soap UI</span>
+                <span class="m-1 cloud">Cloud Computing</span>
+                <span class="m-1 cloud">Azure</span>
+                <span class="m-1 front-end">Bootstrap</span>
+                <span class="m-1 cloud">Docker</span>
+                <span class="m-1 testing">Jest</span>
               </div>
-              <div class="line-six" style="width: 90%">
-                <span class="front-end">CSS</span>
-                <span>Ruby On Rails</span>
-                <span class="front-end">Swift</span>
-                <span>Postman</span>
-                <span>Apache</span>
-                <span>Machine</span>
-                <span>Machine Learning</span>
-                <span>SQL</span>
-                <span class="front-end">Vue</span>
-                <span>Laravel</span>
-                <span class="front-end">Python</span>
+              <div class="d-flex flex-wrap line-six" style="width: 90%">
+                <span class="m-1 front-end">CSS</span>
+                <span class="m-1 back-end">Ruby On Rails</span>
+                <span class="m-1 mobile">Swift</span>
+                <span class="m-1 testing"> Postman</span>
+                <span class="m-1 administration">Apache</span>
+                <span class="m-1 data-scientist">Machine Learning</span>
+                <span class="m-1 data-Analyst">SQL</span>
+                <span class="m-1 front-end">Vue</span>
+                <span class="m-1 back-end">Laravel</span>
+                <span class="m-1 back-end data-Analyst data-scientist"
+                  >Python</span
+                >
               </div>
-              <div class="line-seven" style="width: 80%">
-                <span class="active btn-round">Angular</span>
-                <span>Django</span>
-                <span>Oracle</span>
-                <span>Swarm</span>
-                <span class="front-end">React</span>
-                <span>Spring</span>
-                <span>Rspec</span>
-                <span>SSH</span>
-                <span>Flask</span>
-                <span class="front-end">Node.Js</span>
+              <div class="d-flex flex-wrap line-seven" style="width: 80%">
+                <span class="m-1 front-end btn-round">Angular</span>
+                <span class="m-1 back-end">Django</span>
+                <span class="m-1 data-Analyst">Oracle</span>
+                <span class="m-1 cloud">Swarm</span>
+                <span class="m-1 front-end">React</span>
+                <span class="m-1 back-end">Spring</span>
+                <span class="m-1 testing">Rspec</span>
+                <span class="m-1 administration">SSH</span>
+                <span class="m-1 back-end">Flask</span>
+                <span class="m-1 back-end">Node.Js</span>
               </div>
             </div>
           </div>

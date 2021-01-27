@@ -1,7 +1,7 @@
-const tags = document.querySelectorAll("#tags span.front-end");
+const tags = document.querySelectorAll("#tags span");
 
 // getting className of selected profile
-const fakeIDs = "front-end";
+const fakeIDs = "cloud";
 
 // adding active class to selected ids
 console.log(tags);
