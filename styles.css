@@ -372,14 +372,13 @@ ul.header-li  li span {
   /* .card-container::-webkit-scrollbar { 
     display: none;  
 } */
-
 #card a { display: block;}
 #card img.logo { width: 50%;}
 
 .card {
     border-radius: 10px;
     margin: auto;
-
+    padding: 0;
   
 }
 
@@ -679,6 +678,18 @@ hr.footer-line {
  
     width: 18rem !important;
  
-}
+    }
+    .innercontainer {
+        flex-direction: column;
+    }
+    .logo {
+        justify-content: center;
+    }
+    footer .logo img {
+    width: 5vw;
+    }
+    .text-center p {
+        padding-top: 0 !important;
+    }
 
 }
