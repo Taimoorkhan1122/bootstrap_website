@@ -167,16 +167,6 @@ a{
 }
 
 /* platform illustration css */
-#img-bg-1 {
-    /*
-    background: 
-    /* image url, repeat, positions /
-    /* shapes  /
-    url("./assets/PLATFORM/shape_first.svg") no-repeat  center;
-    background-size: fill;
-    */
-
-}
 
 #img-bg-1 {
     position: relative;
@@ -928,7 +918,6 @@ hr.footer-line {
         max-width: 85vw;
     }
     .line-one  {
-        /* height: 35vh; */
         margin: 0;
     }
     #technologies a:not(.profile-button-primary){
