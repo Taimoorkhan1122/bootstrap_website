@@ -1,11 +1,11 @@
 // getting required DOM elements
 const tags = document.querySelectorAll("#tags span");
 const buttons = document.querySelectorAll("#technologies a");
+
 // array from nodelist object
 const btnArr = Array.from(buttons);
 
-// btn profile-button-primary
-// Getting all buttons inside technologies and adding event lister
+// Mapping over buttons array inside #technologies and adding event listener
 btnArr.map((item) => {
   item.addEventListener("click", (event) => {
     removeOldClasses();
@@ -27,11 +27,13 @@ function addActiveClass(eventData) {
   );
 }
 
-//remove old classe
-function removeOldClasses() {
+//remove old classes
+async function removeOldClasses() {
   btnArr.map((item) => {
     if (item.classList.contains("btn", "profile-button-primary")) {
       item.classList.remove("btn", "profile-button-primary");
+    } else {
+      console.error("no class found");
     }
   });
 }
